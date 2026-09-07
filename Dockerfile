@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile: build with Maven then run with a slim JRE
 
-FROM maven:3.9.4-openjdk-17-slim AS build
+FROM maven:3.9.4-eclipse-temurin-17 AS build
 WORKDIR /workspace
 # Copy Maven wrapper & settings where present to speed up builds
 COPY pom.xml ./
