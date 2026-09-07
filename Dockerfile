@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile: build with Maven then run with a slim JRE
 
-FROM maven:3.8.8-openjdk-17-slim AS build
+FROM maven:3.9.4-openjdk-17-slim AS build
 WORKDIR /workspace
 # Copy Maven wrapper & settings where present to speed up builds
 COPY pom.xml ./
@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn -B -DskipTests package
 
 # Runtime image
-FROM eclipse-temurin:17-jre-jammy
+FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=build /workspace/target/LocationTrackerServer-0.0.1-SNAPSHOT.jar app.jar
 # Persist H2 file-based database here
