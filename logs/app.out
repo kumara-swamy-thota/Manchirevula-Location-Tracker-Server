@@ -1,0 +1,46 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-07T16:02:21.149+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.m.l.LocationTrackerServerApplication   : Starting LocationTrackerServerApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 35360 (C:\Users\KumaraSwamyThota\Downloads\LocationTrackerServer\target\LocationTrackerServer-0.0.1-SNAPSHOT.jar started by KumaraSwamyThota in C:\Users\KumaraSwamyThota\Downloads\LocationTrackerServer)
+2026-09-07T16:02:21.161+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.m.l.LocationTrackerServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T16:02:22.429+05:30  INFO 35360 --- [LocationTrackerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T16:02:22.526+05:30  INFO 35360 --- [LocationTrackerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2026-09-07T16:02:23.738+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-09-07T16:02:23.773+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T16:02:23.774+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-07T16:02:23.899+05:30  INFO 35360 --- [LocationTrackerServer] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2644 ms
+2026-09-07T16:02:24.545+05:30  INFO 35360 --- [LocationTrackerServer] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T16:02:24.659+05:30  INFO 35360 --- [LocationTrackerServer] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-07T16:02:25.705+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T16:02:25.757+05:30  INFO 35360 --- [LocationTrackerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T16:02:26.079+05:30  INFO 35360 --- [LocationTrackerServer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/locationdb user=SA
+2026-09-07T16:02:26.083+05:30  INFO 35360 --- [LocationTrackerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T16:02:26.174+05:30  INFO 35360 --- [LocationTrackerServer] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/locationdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: LOCATIONDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T16:02:27.428+05:30  INFO 35360 --- [LocationTrackerServer] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T16:02:27.517+05:30  INFO 35360 --- [LocationTrackerServer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T16:02:27.677+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T16:02:28.042+05:30  WARN 35360 --- [LocationTrackerServer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T16:02:28.642+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-09-07T16:02:28.664+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.m.l.LocationTrackerServerApplication   : Started LocationTrackerServerApplication in 8.396 seconds (process running for 9.344)
+2026-09-07T16:02:28.732+05:30  INFO 35360 --- [LocationTrackerServer] [           main] o.m.l.config.H2ConsoleConfig             : Started H2 TCP server at tcp://192.168.1.40:9092 and web console at http://192.168.1.40:8082
+2026-09-07T16:02:36.192+05:30  INFO 35360 --- [LocationTrackerServer] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T16:02:36.198+05:30  INFO 35360 --- [LocationTrackerServer] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T16:02:36.200+05:30  INFO 35360 --- [LocationTrackerServer] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
