@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: location-tracker-server:latest
+    ports:
+      - "8081:8081"   # Spring Boot API
+      - "8082:8082"   # H2 Web Console (started by app)
+      - "9092:9092"   # H2 TCP server (for external JDBC connections)
+    volumes:
+      - ./data:/app/data
+    environment:
+      - JAVA_OPTS=
+    restart: unless-stopped
