@@ -66,4 +66,15 @@ public class LocationRecord {
     public void setDeviceId(String deviceId) {
         this.deviceId = deviceId;
     }
+
+    @Override
+    public String toString() {
+        return "LocationRecord{" +
+                "id=" + id +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", timestamp=" + timestamp +
+                ", deviceId='" + deviceId + '\'' +
+                '}';
+    }
 }
