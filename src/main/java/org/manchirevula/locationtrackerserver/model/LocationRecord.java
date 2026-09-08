@@ -12,6 +12,8 @@ public class LocationRecord {
 
     private double latitude;
     private double longitude;
+    private double speed;
+    private double speedKmh;
 
     // epoch millis
     private long timestamp;
@@ -20,9 +22,11 @@ public class LocationRecord {
 
     public LocationRecord() {}
 
-    public LocationRecord(double latitude, double longitude, long timestamp, String deviceId) {
+    public LocationRecord(double latitude, double longitude, double speed, double speedKmh, long timestamp, String deviceId) {
         this.latitude = latitude;
         this.longitude = longitude;
+        this.speed = speed;
+        this.speedKmh = speedKmh;
         this.timestamp = timestamp;
         this.deviceId = deviceId;
     }
@@ -51,6 +55,22 @@ public class LocationRecord {
         this.longitude = longitude;
     }
 
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+    public double getSpeedKmh() {
+        return speedKmh;
+    }
+
+    public void setSpeedKmh(double speedKmh) {
+        this.speedKmh = speedKmh;
+    }
+
     public long getTimestamp() {
         return timestamp;
     }
@@ -73,6 +93,8 @@ public class LocationRecord {
                 "id=" + id +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
+                ", speed=" + speed +
+                ", speedKmh=" + speedKmh +
                 ", timestamp=" + timestamp +
                 ", deviceId='" + deviceId + '\'' +
                 '}';
