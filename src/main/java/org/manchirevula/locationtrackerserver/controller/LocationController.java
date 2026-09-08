@@ -46,4 +46,14 @@ public class LocationController {
                 .map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.noContent().build());
     }
+
+    // API: DELETE all location records
+    @DeleteMapping
+    public ResponseEntity<?> deleteAllLocations() {
+        repository.deleteAll();
+        Map<String, String> resp = new HashMap<>();
+        resp.put("status", "success");
+        resp.put("message", "All location records deleted");
+        return ResponseEntity.ok(resp);
+    }
 }
